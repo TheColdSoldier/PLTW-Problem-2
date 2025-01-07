@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 public class AmazonScraper {
     public static void main(String[] args) {
         // Path to your ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ashish Bhogasamudram\\Downloads\\test\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "test\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 
         // Create a WebDriver instance
         WebDriver driver = new ChromeDriver();
@@ -49,7 +49,7 @@ public class AmazonScraper {
             Elements stars = doc.select(".review-rating");
 
             // Open a file writer to save the data
-            try (FileWriter writer = new FileWriter("data/socialMediaPosts.txt")) {
+            try (FileWriter writer = new FileWriter("test\\data\\socialMediaPosts.txt")) {
                 for (int i = 0; i < reviews.size(); i++) {
                     String reviewerName = reviewers.size() > i ? reviewers.get(i).text() : "N/A";
                     String reviewContent = reviews.size() > i ? reviews.get(i).text() : "N/A";
