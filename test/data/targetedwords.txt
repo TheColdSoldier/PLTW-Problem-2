@@ -1,0 +1,8 @@
+ergonomic,1.5
+adjustable,1.0
+comfortable,1.2
+quality,1.0
+sturdy,1.1
+easy,0.8
+height,0.9
+smooth,0.7 
